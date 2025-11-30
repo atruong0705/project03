@@ -1,0 +1,134 @@
+/* Accessibility: Colors picked to have strong contrast between text and background. */
+/* Validation and tools: I will test this file with the W3C CSS Validator. */
+/* Layout: Simple responsive table, table wrapper can scroll on small screens. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #222222;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+main {
+  padding: 1.5rem 1rem 2.5rem 1rem;
+}
+
+section {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Table styling for readability and accessibility */
+.agency-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+  background-color: #ffffff;
+}
+
+.agency-table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.agency-table th,
+.agency-table td {
+  border: 1px solid #cccccc;
+  padding: 0.6rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.agency-table thead th {
+  background-color: #003366;
+  color: #ffffff;
+}
+
+.agency-table tbody tr:nth-child(even) {
+  background-color: #f0f4ff;
+}
+
+/* Make table usable on small screens */
+.agency-table {
+  display: block;
+  overflow-x: auto;
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+a:focus,
+a:hover {
+  color: #004999;
+}
+
+/* Note text under the table */
+.note {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ffcc33;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #ffe680;
+}
+
+/* Basic responsive spacing for larger screens */
+@media (min-width: 768px) {
+  header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

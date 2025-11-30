@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Food Help Near Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Table of free food and meal sites that serve my neighborhood in Philadelphia.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessibility: Clear page title and heading so screen readers know the purpose of the page. -->
+  <header>
+    <h1>Free Food and Meal Sites Near Me</h1>
+    <p class="intro">
+      This page lists a few places in Philadelphia where people can get free food or meals.
+      Information was found using the City food and meal resources at <a href="https://www.phila.gov/food/" target="_blank" rel="noopener">phila.gov/food</a>.
+    </p>
+  </header>
+
+  <main>
+    <!-- Accessibility: Table includes caption and scoped headers to help screen readers. -->
+    <section aria-labelledby="food-table-heading">
+      <h2 id="food-table-heading">Food and Meal Agencies</h2>
+
+      <table class="agency-table">
+        <caption>Agencies that provide free food or meals in Center City Philadelphia</caption>
+        <thead>
+          <tr>
+            <th scope="col">Agency name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Hours of service</th>
+            <th scope="col">Website</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Philadelphia Chinatown Development Corporation (Crane Center)</td>
+            <td>1001 Vine St, Philadelphia, PA 19107</td>
+            <td>215-922-2156</td>
+            <td>Friday, 11:00 a.m. to 2:00 p.m.</td>
+            <td>
+              <a href="https://chinatown-pcdc.org/" target="_blank" rel="noopener">
+                Visit site
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Saint Mark&#39;s Church Food Cupboard</td>
+            <td>1625 Locust St, Philadelphia, PA 19103</td>
+            <td>215-735-1416</td>
+            <td>Tuesday to Friday, 9:30 a.m. to 11:00 a.m.</td>
+            <td>
+              <a href="https://www.saintmarksphiladelphia.org/" target="_blank" rel="noopener">
+                Visit site
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Saint Peter&#39;s Episcopal Church Pantry</td>
+            <td>313 Pine St, Philadelphia, PA 19106</td>
+            <td>215-925-5968</td>
+            <td>Saturday, 8:00 a.m. to 10:00 a.m.</td>
+            <td>
+              <a href="https://www.stpetersphila.org/" target="_blank" rel="noopener">
+                Visit site
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Accessibility: Extra note telling users to call first because hours can change. -->
+      <p class="note">
+        Hours and details can change. It is always a good idea to call the agency before you go.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Made for CIS 130 project &middot;
+      <!-- Replace YOUR-GITHUB-USERNAME with your real GitHub username -->
+      <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">
+        My GitHub profile
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
